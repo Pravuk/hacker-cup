@@ -35,3 +35,8 @@ type Direction struct {
 func NewNonDiagonalDirections() []Direction {
 	return []Direction{{-1, 0}, {0, -1}, {1, 0}, {0, 1}}
 }
+
+func HackingFloor(a, b int) int {
+	r := a % b
+	return (a - r) / b
+}
