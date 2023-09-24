@@ -40,3 +40,7 @@ func HackingFloor(a, b int) int {
 	r := a % b
 	return (a - r) / b
 }
+
+func Remove(slice []int, s int) []int {
+	return append(slice[:s], slice[s+1:]...)
+}
